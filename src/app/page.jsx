@@ -12,6 +12,42 @@ export default function Home() {
 
   const aboutMeRef = useRef(null);
 
+  const technologies = [
+    {
+      "name": "HTML", 
+      "image": "/assets/brand-icons/html.svg"
+    }, 
+    {
+      "name": "CSS", 
+      "image": "/assets/brand-icons/css.svg"
+    }, 
+    {
+      "name": "JavaScript", 
+      "image": "/assets/brand-icons/javascript.svg", 
+      "imageStyle": "p-2"
+    }, 
+    {
+      "name": "Node.js", 
+      "image": "/assets/brand-icons/node-js.svg", 
+      "imageStyle": "w-fit p-1"
+    }, 
+    {
+      "name": "React.js", 
+      "image": "/assets/brand-icons/react.svg", 
+      "imageStyle": "w-fit p-2"
+    }, 
+    {
+      "name": "Tailwind", 
+      "image": "/assets/brand-icons/tailwind-css.svg", 
+      "imageStyle": "w-fit p-6 scale-[130%]"
+    }, 
+    {
+      "name": "MongoDB", 
+      "image": "/assets/brand-icons/mongo-db.svg", 
+      "imageStyle": "w-fit p-2"
+    }, 
+  ]
+
   return (
 
     <Navbar current="Home">
@@ -43,7 +79,7 @@ export default function Home() {
 
         <Separator/>
 
-        <div className="flex justify-center m-20 gap-3 flex-wrap w-fit self-center" ref={aboutMeRef}>
+        <div className="flex flex-col m-20 gap-3 flex-wrap w-fit self-center" ref={aboutMeRef}>
 
           <Card className="min-w-96 max-w-[70rem]">
             <CardHeader className="flex flex-row gap-3">
@@ -58,6 +94,21 @@ export default function Home() {
               </span>
             </CardContent>
           </Card>
+
+          <div className="flex flex-wrap max-w-[75rem] gap-3 justify-center lg:justify-left">
+            {technologies.map(technology => (
+              <Card className="w-40 h-40">
+                <CardHeader className="flex justify-center">
+                  <img src={technology.image} className={`w-20 h-20 self-center object-cover ${technology.imageStyle}`}/>
+                  <CardTitle className="flex justify-center">
+                    <span className="mt-2">
+                      {technology.name}
+                    </span>
+                  </CardTitle>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
 
         </div>
 

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import { CalendarDays } from "lucide-react"
 
 function AchievementCard({name, award, image, date, className, ...props}) {
 
@@ -19,7 +20,8 @@ function AchievementCard({name, award, image, date, className, ...props}) {
                 </CardDescription>
             </CardHeader>
             <CardContent className="flex justify-center">
-                <Badge className="text-md">
+                <Badge className="text-md flex gap-x-2">
+                    <CalendarDays size={20}/>
                     {date}
                 </Badge>
             </CardContent>
@@ -42,6 +44,12 @@ export default function Achievements() {
             "award": "#3 in Internet Applications 9-10",
             "image": "/assets/achievements/gastc_2024.png", 
             "date" : "March 2nd, 2024"
+        }, 
+        {
+            "name": "Microsoft Office Specialist", 
+            "award": "Powerpoint 2019 Associate",
+            "image": "/assets/achievements/ppt_2019_associate.png", 
+            "date" : "February 14th, 2024"
         }, 
         {
             "name": "Lanier Regional Technology Competition", 
