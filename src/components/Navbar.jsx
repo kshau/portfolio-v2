@@ -28,7 +28,7 @@ export function Navbar({current, children}) {
 
         <div>
 
-            <div className="w-screen bg-background h-16 fixed border-b flex flex-row lg:justify-end gap-x-3 justify-center lg:pr-16 z-[1]">
+            <div className="w-screen bg-background h-16 fixed border-b flex flex-row lg:justify-end gap-x-1 lg:gap-x-3 justify-center lg:pr-16 z-[1]">
                 {pages.map((page, index) => (
                     <Link href={page.url} key={index}>
                         <div className="flex flex-col justify-center h-full">
