@@ -77,7 +77,7 @@ export default function Achievements() {
 
                         {achievements.map((achievement, index) => (index % 2 == 0 ? (
 
-                            <div className="flex flex-row mb-56">
+                            <div className="flex flex-row mb-56" key={index}>
 
                                 <AchievementCard name={achievement.name} award={achievement.award} image={achievement.image} date={achievement.date}/>
 
@@ -95,7 +95,7 @@ export default function Achievements() {
 
                         {achievements.map((achievement, index) => (index % 2 != 0 ? (
 
-                            <div className="flex flex-row mt-72">
+                            <div className="flex flex-row mt-72" key={index}>
 
                                 <div className="bg-white h-2 w-20 mt-36 rounded-r-md mr-10"/>
 
@@ -111,7 +111,7 @@ export default function Achievements() {
 
                 <div className="mt-16 flex flex-col gap-3 lg:hidden animate-fadeIn opacity-0 delay-200">
                     {achievements.map((achievement, index) => (
-                        <AchievementCard name={achievement.name} award={achievement.award} image={achievement.image} date={achievement.date} className="self-center"/>
+                        <AchievementCard name={achievement.name} award={achievement.award} image={achievement.image} date={achievement.date} className="self-center" key={index}/>
                     ))}
                 </div>
 

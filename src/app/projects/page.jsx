@@ -52,7 +52,7 @@ export default function Achievements() {
 
                 <div className="mt-16 flex justify-center gap-3 flex-wrap animate-fadeIn opacity-0 delay-200">
                     {projects.map(project => (
-                        <Card className="h-fit w-[23rem] lg:w-[30rem]">
+                        <Card className="h-fit w-[23rem] lg:w-[30rem]" key={index}>
                             <CardHeader>
                                 <img src={project.image} className="h-48 rounded-md object-cover mb-5"/>
                                 <CardTitle className="text-3xl">
