@@ -96,8 +96,8 @@ export default function Home() {
           </Card>
 
           <div className="flex flex-wrap max-w-[75rem] gap-3 justify-center lg:justify-left">
-            {technologies.map(technology => (
-              <Card className="w-40 h-40">
+            {technologies.map((technology, index) => (
+              <Card className="w-40 h-40" key={index}>
                 <CardHeader className="flex justify-center">
                   <img src={technology.image} className={`w-20 h-20 self-center object-cover ${technology.imageStyle}`}/>
                   <CardTitle className="flex justify-center">
