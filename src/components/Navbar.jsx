@@ -33,7 +33,7 @@ export function Navbar({current, children}) {
                     <Link href={page.url} key={index}>
                         <div className="flex flex-col justify-center h-full">
                             <Button variant={(page.name == current) ? "default" : "ghost"} className={`font-bold text-sm lg:text-xl lg:font-thin m-auto`}>{page.name}</Button>
-                        </div>
+                        </div> 
                     </Link>
                 ))}
             </div>
