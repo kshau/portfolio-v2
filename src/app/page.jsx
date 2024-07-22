@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-center my-auto gap-10 w-fit flex-wrap">
 
-            <img src="/assets/shaurya-kumar.png" alt="Shaurya Kumar" className="w-52 lg:w-64 aspect-square rounded-full object-cover m-auto animate-fadeIn opacity-0 delay-100"/>
+            <img src="/assets/shaurya-kumar.png" className="w-52 lg:w-64 aspect-square rounded-full object-cover m-auto animate-fadeIn opacity-0 delay-100"/>
 
             <div className="flex flex-col gap-5">
               
