@@ -14,11 +14,6 @@ export default function Contact() {
 
     const contactMethods = [
         {
-            "name": "Phone number", 
-            "icon": <Phone/>,
-            "value": "(404)-432-9074"
-        }, 
-        {
             "name": "Email", 
             "icon": <Mail size={27}/>,
             "value": "kshaurya731@gmail.com"
