@@ -21,6 +21,17 @@ export default function Achievements() {
             "githubUrl": "https://github.com/kshau/shauryas-web-dev"
         }, 
         {
+            "name": "SAT Vocab Words on Discord", 
+            "description": 
+            <span>
+                If you are a teenager who uses Discord, join this server!
+                A bot will tell you an SAT vocabulary word and its definition daily at 10 am EST!
+            </span>, 
+            "image": "/assets/projects/sat-words.png",
+            "url": "https://shaurya.pro/sat", 
+            "githubUrl": "https://github.com/kshau/sat-words-discord"
+        }, 
+        {
             "name": "DNA Info", 
             "description": 
             <span>
