@@ -10,6 +10,15 @@ export default function Achievements() {
 
     const projects = [
         {
+            "name": "SAT Unlimited", 
+            "description": 
+            <span>
+                Level up your SAT question solving skills with this tool! You get to choose what to study, and how much you would like to study.
+            </span>, 
+            "image": "/assets/projects/sat-unlimited.png",
+            "url": "https://satunlimited.com", 
+        }, 
+        {
             "name": "Freelancing", 
             "description": 
             <span>
