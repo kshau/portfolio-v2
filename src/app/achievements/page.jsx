@@ -58,7 +58,7 @@ export default function Achievements() {
             "date" : "January 20th, 2024"
         }, 
         {
-            "name": "HackGwinett 3", 
+            "name": "HackGwinnett 3", 
             "award": "Best Humanitarian",
             "image": "/assets/achievements/hack_gwinett_3_best_humanitarian.png", 
             "date" : "October 28th, 2023"
