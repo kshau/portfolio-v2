@@ -6,6 +6,52 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { cn } from "@/lib/utils"
 import { CalendarDays } from "lucide-react"
 
+const achievements = [
+    {
+        "name": "Microsoft Office Specialist", 
+        "award": "Word Associate Microsoft 365 Apps",
+        "image": "/assets/achievements/word_365_associate.png", 
+        "date" : "October 14th, 2024"
+    }, 
+    {
+        "name": "GFACT Certification", 
+        "award": "Global Information Assurance Certification (GIAC)", 
+        "image": "/assets/achievements/gfact.png", 
+        "date" : "June 18th, 2024"
+    }, 
+    {
+        "name": "GaSTC 2024", 
+        "award": "#3 in Internet Applications 9-10",
+        "image": "/assets/achievements/gastc_2024.png", 
+        "date" : "March 2nd, 2024"
+    }, 
+    {
+        "name": "Microsoft Office Specialist", 
+        "award": "Powerpoint 2019 Associate",
+        "image": "/assets/achievements/ppt_2019_associate.png", 
+        "date" : "February 14th, 2024"
+    }, 
+    {
+        "name": "Lanier Regional Technology Competition", 
+        "award": "#1 in Internet Applications 9-10",
+        "image": "/assets/achievements/lanier_regional_2024.png", 
+        "date" : "January 20th, 2024"
+    }, 
+    {
+        "name": "HackGwinnett 3", 
+        "award": "Best Humanitarian",
+        "image": "/assets/achievements/hack_gwinett_3_best_humanitarian.png", 
+        "date" : "October 28th, 2023"
+    }, 
+    {
+        "name": "Certified Entry-Level JS Programmer", 
+        "award": "JS Institute Certification",
+        "image": "/assets/achievements/jse.png", 
+        "date" : "July 30th, 2023"
+    }, 
+
+]
+
 function AchievementCard({name, award, image, date, className, ...props}) {
 
     return (
@@ -31,46 +77,6 @@ function AchievementCard({name, award, image, date, className, ...props}) {
 }
 
 export default function Achievements() {
-
-    const achievements = [
-        {
-            "name": "GFACT Certification", 
-            "award": "Global Information Assurance Certification (GIAC)", 
-            "image": "/assets/achievements/gfact.png", 
-            "date" : "June 18th, 2024"
-        }, 
-        {
-            "name": "GaSTC 2024", 
-            "award": "#3 in Internet Applications 9-10",
-            "image": "/assets/achievements/gastc_2024.png", 
-            "date" : "March 2nd, 2024"
-        }, 
-        {
-            "name": "Microsoft Office Specialist", 
-            "award": "Powerpoint 2019 Associate",
-            "image": "/assets/achievements/ppt_2019_associate.png", 
-            "date" : "February 14th, 2024"
-        }, 
-        {
-            "name": "Lanier Regional Technology Competition", 
-            "award": "#1 in Internet Applications 9-10",
-            "image": "/assets/achievements/lanier_regional_2024.png", 
-            "date" : "January 20th, 2024"
-        }, 
-        {
-            "name": "HackGwinnett 3", 
-            "award": "Best Humanitarian",
-            "image": "/assets/achievements/hack_gwinett_3_best_humanitarian.png", 
-            "date" : "October 28th, 2023"
-        }, 
-        {
-            "name": "Certified Entry-Level JS Programmer", 
-            "award": "JS Institute Certification",
-            "image": "/assets/achievements/jse.png", 
-            "date" : "July 30th, 2023"
-        }, 
-
-    ]
 
     return (
         <Navbar current="Achievements">
