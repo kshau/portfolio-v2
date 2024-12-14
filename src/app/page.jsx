@@ -79,35 +79,39 @@ export default function Home() {
 
         <Separator/>
 
-        <div className="flex flex-col m-20 gap-3 flex-wrap w-fit self-center" ref={aboutMeRef}>
+        <div className="flex justify-center w-full bg-background">
 
-          <Card className="min-w-96 max-w-[70rem]">
-            <CardHeader className="flex flex-row gap-3">
-              <CircleUser size={42}/>
-              <CardTitle className="text-3xl">
-                About me
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-y-5 text-xl">
-              <span>
-                Hi! I&apos;m Shaurya Kumar. As a high school sophomore with a passion for programming, I have been immersed in the world of coding since I moved to the United States at the age of nine. Over the years, I have honed my skills in various programming languages and technologies, including JavaScript, MongoDB, ReactJS, NodeJS, and SQL. Beginning my journey with game development, I slowly transitioned more into web and mobile app development. As a side hobby, I also like to play the drum set!
-              </span>
-            </CardContent>
-          </Card>
+          <div className="flex flex-col m-20 gap-3 flex-wrap w-fit self-center" ref={aboutMeRef}>
 
-          <div className="flex flex-wrap max-w-[75rem] gap-3 justify-center lg:justify-left">
-            {technologies.map((technology, index) => (
-              <Card className="w-40 h-40" key={index}>
-                <CardHeader className="flex justify-center">
-                  <img src={technology.image} className={`w-20 h-20 self-center object-cover ${technology.imageStyle}`}/>
-                  <CardTitle className="flex justify-center">
-                    <span className="mt-2">
-                      {technology.name}
-                    </span>
-                  </CardTitle>
-                </CardHeader>
-              </Card>
-            ))}
+            <Card className="min-w-96 max-w-[70rem]">
+              <CardHeader className="flex flex-row gap-3">
+                <CircleUser size={42}/>
+                <CardTitle className="text-3xl">
+                  About me
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex flex-col gap-y-5 text-xl">
+                <span>
+                  Hi! I&apos;m Shaurya Kumar. As a high school sophomore with a passion for programming, I have been immersed in the world of coding since I moved to the United States at the age of nine. Over the years, I have honed my skills in various programming languages and technologies, including JavaScript, MongoDB, ReactJS, NodeJS, and SQL. Beginning my journey with game development, I slowly transitioned more into web and mobile app development. As a side hobby, I also like to play the drum set!
+                </span>
+              </CardContent>
+            </Card>
+
+            <div className="flex flex-wrap max-w-[75rem] gap-3 justify-center lg:justify-left">
+              {technologies.map((technology, index) => (
+                <Card className="w-40 h-40" key={index}>
+                  <CardHeader className="flex justify-center">
+                    <img src={technology.image} className={`w-20 h-20 self-center object-cover ${technology.imageStyle}`}/>
+                    <CardTitle className="flex justify-center">
+                      <span className="mt-2">
+                        {technology.name}
+                      </span>
+                    </CardTitle>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+
           </div>
 
         </div>

@@ -55,7 +55,7 @@ const achievements = [
 function AchievementCard({name, award, image, date, className, ...props}) {
 
     return (
-        <Card className={cn("h-fit w-[23rem]", className)} {...props}>
+        <Card className={cn("h-fit w-[23rem] bg-background", className)} {...props}>
             <CardHeader>
                 <img src={image} className="h-48 rounded-md object-cover mb-5"/>
                 <CardTitle className="text-3xl">

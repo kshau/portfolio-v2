@@ -38,7 +38,9 @@ export function Navbar({current, children}) {
                 ))}
             </div>
 
-            {children}
+            <div className="relative inset-0 w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:48px_48px]">
+                {children}
+            </div>
 
         </div>
     )

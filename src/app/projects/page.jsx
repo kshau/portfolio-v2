@@ -66,13 +66,13 @@ export default function Achievements() {
     return (
         <Navbar current="Projects">
 
-            <div className="flex flex-col">
+            <div className="flex flex-col h-screen">
 
                 <span className="text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Projects</span>
 
                 <div className="mt-16 flex justify-center gap-3 flex-wrap animate-fadeIn opacity-0 delay-200">
                     {projects.map((project, index) => (
-                        <Card className="h-fit w-[23rem] lg:w-[30rem]" key={index}>
+                        <Card className="h-fit w-[23rem] lg:w-[30rem] bg-background" key={index}>
                             <CardHeader>
                                 <img src={project.image} className="h-48 rounded-md object-cover mb-5"/>
                                 <CardTitle className="text-3xl">

@@ -47,7 +47,7 @@ export default function Contact() {
 
     return (
         <Navbar current="Contact">
-            <div className="flex flex-col">
+            <div className="flex flex-col h-screen">
 
                 <span className="text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Contact</span>
 
@@ -55,7 +55,7 @@ export default function Contact() {
 
                     {contactMethods.map((method, index) => (
 
-                        <Card className={`w-[70rem] self-center w-fit`} key={index}>
+                        <Card className={`self-center w-fit bg-background`} key={index}>
 
                             <CardHeader className="flex flex-row gap-3">
 
@@ -81,13 +81,11 @@ export default function Contact() {
 
                 </div>
 
-                <Separator className="lg:w-[30rem] self-center m-12 animate-fadeIn opacity-0 delay-300"/>
-
-                <div className="flex flex-row self-center gap-3 flex-wrap  animate-fadeIn opacity-0 delay-500 justify-center">
+                <div className="flex flex-row self-center gap-3 flex-wrap  animate-fadeIn opacity-0 delay-500 justify-center m-8">
 
                     {socialLinks.map((link, index) => (
 
-                    <Card className={`w-[70rem] self-center w-fit animate-fadeIn opacity-0`} key={index}>
+                    <Card className={`self-center w-fit animate-fadeIn opacity-0 bg-background`} key={index}>
 
                         <CardHeader className="flex flex-row gap-3">
 
