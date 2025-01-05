@@ -48,6 +48,7 @@ export default function Achievements() {
                 Made after learning about DNA in biology class!
             </span>, 
             "image": "/assets/projects/dnainfo.png",
+            "url": "https://dnainfo.shaurya.pro", 
             "githubUrl": "https://github.com/kshau/DNAInfo.git"
         }, 
         {
