@@ -58,7 +58,7 @@ export default function Achievements() {
                 A simple CTF game made for GaSTC 2024! Includes cryptography, steganography, and web related challenges. Collab with <Link href="https://keshav.pro" className="underline">Keshav Shah</Link>. 
             </span>, 
             "image": "/assets/projects/dartctf.png",
-            "url": "https://dartctf.com", 
+            "url": "https://dartctf.shaurya.pro", 
             "githubUrl": "https://github.com/KeshavCode6/ctfgame"
         }, 
 
