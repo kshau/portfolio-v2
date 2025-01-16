@@ -16,7 +16,7 @@ export default function Achievements() {
                 A website created with programming challenges for members of the coding club at my high school! Collab with <Link href="https://keshav.pro" className="underline">Keshav Shah</Link>. 
             </span>, 
             "image": "/assets/projects/codeaai.png",
-            "url": "https://satunlimited.com", 
+            "url": "https://codeaai.org", 
         }, 
         {
             "name": "SAT Unlimited", 
