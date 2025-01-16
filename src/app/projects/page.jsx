@@ -10,6 +10,15 @@ export default function Achievements() {
 
     const projects = [
         {
+            "name": "CodeAAI", 
+            "description": 
+            <span>
+                A website created with programming challenges for members of the coding club at my high school! Collab with <Link href="https://keshav.pro" className="underline">Keshav Shah</Link>. 
+            </span>, 
+            "image": "/assets/projects/codeaai.png",
+            "url": "https://satunlimited.com", 
+        }, 
+        {
             "name": "SAT Unlimited", 
             "description": 
             <span>
@@ -28,17 +37,6 @@ export default function Achievements() {
             "image": "/assets/projects/freelancing.png",
             "url": "https://web.shaurya.pro", 
             "githubUrl": "https://github.com/kshau/shauryas-web-dev"
-        }, 
-        {
-            "name": "SAT Vocab Words on Discord", 
-            "description": 
-            <span>
-                If you are a teenager who uses Discord, join this server!
-                A bot will tell you an SAT vocabulary word and its definition daily at 10 am EST!
-            </span>, 
-            "image": "/assets/projects/sat-words.png",
-            "url": "https://shaurya.pro/sat", 
-            "githubUrl": "https://github.com/kshau/sat-words-discord"
         }, 
         {
             "name": "DNA Info", 
