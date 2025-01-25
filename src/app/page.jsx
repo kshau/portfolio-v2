@@ -62,12 +62,12 @@ export default function Home() {
 
             <div className="flex flex-col gap-5">
               
-              <span className="text-[45px] lg:text-7xl leading-tight animate-fadeIn opacity-0 delay-300 font-bold">Shaurya Kumar</span>
+              <span className="text-3xl lg:text-7xl leading-tight animate-fadeIn opacity-0 delay-300 font-bold text-center">Shaurya Kumar</span>
 
               <div className="flex flex-row gap-5 self-center mt-4">
-                <Button className="w-40 text-xl h-12 animate-fadeIn opacity-0 delay-500" onClick={() => {aboutMeRef.current.scrollIntoView({"behavior": "smooth"})}}>About me</Button>
+                <Button className="w-40 lg:text-xl lg:py-6 animate-fadeIn opacity-0 delay-500" onClick={() => {aboutMeRef.current.scrollIntoView({"behavior": "smooth"})}}>About me</Button>
                 <Link href="/contact">
-                  <Button className="w-40 text-xl h-12 animate-fadeIn opacity-0 delay-700" variant="outline">Contact</Button>
+                  <Button className="w-40 lg:text-xl lg:py-6 animate-fadeIn opacity-0 delay-700" variant="outline">Contact</Button>
                 </Link>
               </div>
 
@@ -86,11 +86,11 @@ export default function Home() {
             <Card className="min-w-96 max-w-[70rem]">
               <CardHeader className="flex flex-row gap-3">
                 <CircleUser size={42}/>
-                <CardTitle className="text-3xl">
+                <CardTitle className="lg:text-3xl">
                   About me
                 </CardTitle>
               </CardHeader>
-              <CardContent className="flex flex-col gap-y-5 text-xl">
+              <CardContent className="flex flex-col gap-y-5 lg:text-xl">
                 <span>
                   Hi! I&apos;m Shaurya Kumar. As a high school sophomore with a passion for programming, I have been immersed in the world of coding since I moved to the United States at the age of nine. Over the years, I have honed my skills in various programming languages and technologies, including JavaScript, MongoDB, ReactJS, NodeJS, and SQL. Beginning my journey with game development, I slowly transitioned more into web and mobile app development. As a side hobby, I also like to play the drum set!
                 </span>

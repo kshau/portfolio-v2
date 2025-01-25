@@ -5,8 +5,21 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import { CalendarDays } from "lucide-react"
+import Image from "next/image"
 
 const achievements = [
+    {
+        "name": "2025 Lanier Regional Technology Competition", 
+        "award": <span>#3 in Project Programming <br/> 9-10</span>,
+        "image": "/assets/achievements/lanier_regional_2025.png", 
+        "date" : "January 25th, 2025"
+    }, 
+    {
+        "name": "FBLA Regional Leadership Conference 2024-25", 
+        "award": "#5 in Intro to Information Technology",
+        "image": "/assets/achievements/fbla_rlc_2024_25.png", 
+        "date" : "January 17th, 2025"
+    }, 
     {
         "name": "Microsoft Office Specialist", 
         "award": "Word Associate Microsoft 365 Apps",
@@ -32,7 +45,7 @@ const achievements = [
         "date" : "February 14th, 2024"
     }, 
     {
-        "name": "Lanier Regional Technology Competition", 
+        "name": "2024 Lanier Regional Technology Competition", 
         "award": "#1 in Internet Applications 9-10",
         "image": "/assets/achievements/lanier_regional_2024.png", 
         "date" : "January 20th, 2024"
@@ -57,16 +70,16 @@ function AchievementCard({name, award, image, date, className, ...props}) {
     return (
         <Card className={cn("h-fit w-[23rem] bg-background", className)} {...props}>
             <CardHeader>
-                <img src={image} className="h-48 rounded-md object-cover mb-5"/>
-                <CardTitle className="text-3xl">
+                <Image src={image} className="h-48 rounded-md object-cover mb-5" width={1000} height={0}/>
+                <CardTitle className="text-2xl lg:text-3xl">
                     {name}
                 </CardTitle>
-                <CardDescription className="text-xl">
+                <CardDescription className="text-lg lg:text-xl">
                     {award}
                 </CardDescription>
             </CardHeader>
             <CardContent className="flex justify-center">
-                <Badge className="text-md flex gap-x-2">
+                <Badge className="text-sm lg:text-md flex gap-x-2">
                     <CalendarDays size={20}/>
                     {date}
                 </Badge>
@@ -83,7 +96,7 @@ export default function Achievements() {
 
             <div className="flex flex-col">
 
-                <span className="text-5xl lg:text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Achievements</span>
+                <span className="text-4xl lg:text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Achievements</span>
 
                 <div className="lg:flex flex-row justify-center mt-16 mb-5 hidden animate-fadeIn opacity-0 delay-200">
 
