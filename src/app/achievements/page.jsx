@@ -15,7 +15,7 @@ const achievements = [
         "date" : "January 25th, 2025"
     }, 
     {
-        "name": "FBLA Regional Leadership Conference 2024-25", 
+        "name": "FBLA Region Leadership Conference 2024-25", 
         "award": "#5 in Intro to Information Technology",
         "image": "/assets/achievements/fbla_rlc_2024_25.png", 
         "date" : "January 17th, 2025"
