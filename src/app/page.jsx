@@ -62,7 +62,9 @@ export default function Home() {
 
             <div className="flex flex-col gap-5">
               
-              <span className="text-3xl lg:text-7xl leading-tight animate-fadeIn opacity-0 delay-300 font-bold text-center">Shaurya Kumar</span>
+              <span className="text-3xl lg:text-7xl leading-tight animate-fadeIn opacity-0 delay-300 font-bold text-center">
+                Shaurya Kumar
+              </span>
 
               <div className="flex flex-row gap-5 self-center mt-4">
                 <Button className="w-40 lg:text-xl lg:py-6 animate-fadeIn opacity-0 delay-500" onClick={() => {aboutMeRef.current.scrollIntoView({"behavior": "smooth"})}}>About me</Button>

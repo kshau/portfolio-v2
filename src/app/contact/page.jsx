@@ -49,67 +49,69 @@ export default function Contact() {
         <Navbar current="Contact">
             <div className="flex flex-col h-screen">
 
-                <span className="text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Contact</span>
+                <span className="text-4xl lg:text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Contact</span>
 
-                <div className="flex flex-row self-center mt-16 gap-3 flex-wrap animate-fadeIn opacity-0 delay-200 justify-center">
+                <div className="flex flex-col items-center max-w-[40rem] self-center">
 
-                    {contactMethods.map((method, index) => (
+                    <div className="flex flex-col lg:grid lg:grid-cols-2 w-full self-center mt-16 gap-3 animate-fadeIn opacity-0 delay-200 justify-center">
 
-                        <Card className={`self-center w-fit bg-background`} key={index}>
+                        {contactMethods.map((method, index) => (
 
-                            <CardHeader className="flex flex-row gap-3">
+                            <Card className={`w-full self-center bg-background hover:cursor-pointer`} key={index} onClick={() => {copyContact(method)}}>
 
-                                <div className="mt-2">
-                                    {method.icon}
-                                </div>
+                                <CardHeader className="flex flex-row gap-3">
 
-                                <CardTitle className="text-2xl">
-                                    {method.name}
-                                </CardTitle>
+                                    <div className="mt-2">
+                                        {method.icon}
+                                    </div>
 
-                            </CardHeader>
+                                    <CardTitle className="text-2xl">
+                                        {method.name}
+                                    </CardTitle>
 
-                            <CardContent className="flex flex-row gap-5">
-                                <Button variant="ghost" className="text-lg" onClick={() => {copyContact(method)}}>
+                                </CardHeader>
+
+                                <CardContent className="flex flex-row gap-5 text-lg">
                                     {method.value}
-                                </Button>
-                            </CardContent>
+                                </CardContent>
 
-                        </Card>
+                            </Card>
 
-                    ))}
+                        ))}
 
-                </div>
+                    </div>
 
-                <div className="flex flex-row self-center gap-3 flex-wrap  animate-fadeIn opacity-0 delay-500 justify-center m-8">
+                    <div className="flex flex-col lg:grid lg:grid-cols-2 w-full self-center gap-3 flex-wrap animate-fadeIn opacity-0 delay-200 justify-center mt-3">
 
-                    {socialLinks.map((link, index) => (
+                        {socialLinks.map((link, index) => (
 
-                    <Card className={`self-center w-fit animate-fadeIn opacity-0 bg-background`} key={index}>
+                            <Link href={link.url} key={index}>
 
-                        <CardHeader className="flex flex-row gap-3">
+                                <Card className={`w-full self-center animate-fadeIn opacity-0 bg-background`} >
 
-                            <div className="mt-2">
-                                {link.icon}
-                            </div>
+                                    <CardHeader className="flex flex-row gap-3">
 
-                            <CardTitle className="text-2xl">
-                                {link.name}
-                            </CardTitle>
+                                        <div className="mt-2">
+                                            {link.icon}
+                                        </div>
 
-                        </CardHeader>
+                                        <CardTitle className="text-2xl">
+                                            {link.name}
+                                        </CardTitle>
 
-                        <CardContent className="flex flex-row gap-5">
-                            <Link href={link.url}>
-                                <Button variant="ghost" className="text-lg">
-                                    {link.value}
-                                </Button>
+                                    </CardHeader>
+
+                                    <CardContent className="flex flex-row gap-5 text-lg">
+                                        {link.value}
+                                    </CardContent>
+
+                                </Card>
                             </Link>
-                        </CardContent>
+                        
 
-                    </Card>
+                        ))}
 
-                    ))}
+                    </div>
 
                 </div>
 
