@@ -10,6 +10,15 @@ export default function Achievements() {
 
     const projects = [
         {
+            "name": "Vidosaur", 
+            "description": 
+            <span>
+                Choose your own story by joining together prerecorded clips! Created for FBLA Intro to Programming 2024-25 with Kaustubh Varikallu and Shourya Manchikanti.
+            </span>, 
+            "image": "/assets/projects/vidosaur.png",
+            "url": "https://vidosaur.shaurya.pro", 
+        }, 
+        {
             "name": "CodeAAI", 
             "description": 
             <span>
