@@ -9,6 +9,18 @@ import Image from "next/image"
 
 const achievements = [
     {
+        "name": "FBLA State Leadership Conference 2024-25", 
+        "award": "#4 in Intro to Information Technology",
+        "image": "/assets/achievements/fbla_slc_intro_to_it_2024_25.png", 
+        "date" : "March 15th, 2025"
+    }, 
+    {
+        "name": "FBLA State Leadership Conference 2024-25", 
+        "award": "#8 in Intro to Programming",
+        "image": "/assets/achievements/fbla_slc_intro_to_programming_2024_25.png", 
+        "date" : "March 15th, 2025"
+    }, 
+    {
         "name": "2025 Lanier Regional Technology Competition", 
         "award": <span>#3 in Project Programming <br/> 9-10</span>,
         "image": "/assets/achievements/lanier_regional_2025.png", 
@@ -17,7 +29,7 @@ const achievements = [
     {
         "name": "FBLA Region Leadership Conference 2024-25", 
         "award": "#5 in Intro to Information Technology",
-        "image": "/assets/achievements/fbla_rlc_2024_25.png", 
+        "image": "/assets/achievements/fbla_rlc_intro_to_it_2024_25.png", 
         "date" : "January 17th, 2025"
     }, 
     {
