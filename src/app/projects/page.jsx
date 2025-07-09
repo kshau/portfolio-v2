@@ -6,14 +6,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ExternalLink } from "lucide-react"
 import Link from "next/link"
 
-export default function Achievements() {
+export default function Projects() {
 
     const projects = [
         {
             "name": "Vidosaur", 
             "description": 
             <span>
-                Choose your own story by joining together prerecorded clips! Created for FBLA Intro to Programming 2024-25 with Kaustubh Varikallu and Shourya Manchikanti.
+                Choose your own story by joining together prerecorded clips! Created for FBLA Introduction to Programming 2024-25 with Kaustubh Varikallu and Shourya Manchikanti.
             </span>, 
             "image": "/assets/projects/vidosaur.png",
             "url": "https://vidosaur.shaurya.pro", 
@@ -45,7 +45,7 @@ export default function Achievements() {
             </span>, 
             "image": "/assets/projects/freelancing.png",
             "url": "https://web.shaurya.pro", 
-            "githubUrl": "https://github.com/kshau/shauryas-web-dev"
+            "gitHubURL": "https://github.com/kshau/shauryas-web-dev"
         }, 
         {
             "name": "DNA Info", 
@@ -56,7 +56,7 @@ export default function Achievements() {
             </span>, 
             "image": "/assets/projects/dnainfo.png",
             "url": "https://dnainfo.shaurya.pro", 
-            "githubUrl": "https://github.com/kshau/DNAInfo.git"
+            "gitHubURL": "https://github.com/kshau/DNAInfo.git"
         }, 
         {
             "name": "DartCTF", 
@@ -66,7 +66,7 @@ export default function Achievements() {
             </span>, 
             "image": "/assets/projects/dartctf.png",
             "url": "https://dartctf.shaurya.pro", 
-            "githubUrl": "https://github.com/KeshavCode6/ctfgame"
+            "gitHubURL": "https://github.com/KeshavCode6/ctfgame"
         }, 
 
     ]
@@ -74,7 +74,7 @@ export default function Achievements() {
     return (
         <Navbar current="Projects">
 
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col">
 
                 <span className="text-4xl lg:text-6xl font-bold mt-36 self-center animate-fadeIn opacity-0 delay-100">Projects</span>
 
@@ -96,7 +96,7 @@ export default function Achievements() {
                                         <ExternalLink size={31}/>
                                     </Button>
                                 </Link> : <></>}
-                                {project.githubUrl ? <Link href={project.githubUrl}>
+                                {project.gitHubURL ? <Link href={project.gitHubURL}>
                                     <Button className="w-fit h-fit bg-stone-900 hover:bg-stone-800">
                                         <img src="/assets/brand-icons/github.png" className="w-8"/>
                                     </Button>
