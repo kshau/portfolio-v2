@@ -94,7 +94,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="flex flex-col gap-y-5 lg:text-xl">
                 <span>
-                  Hi! I&apos;m Shaurya Kumar. As a high school sophomore with a passion for programming, I have been immersed in the world of coding since I moved to the United States at the age of nine. Over the years, I have honed my skills in various programming languages and technologies, including JavaScript, MongoDB, ReactJS, NodeJS, and SQL. Beginning my journey with game development, I slowly transitioned more into web and mobile app development. As a side hobby, I also like to play the drum set!
+                  Hi! I&apos;m Shaurya Kumar. As a high school junior with a passion for programming, I have been immersed in the world of coding since I moved to the United States at the age of nine. Over the years, I have honed my skills in various programming languages and technologies, including JavaScript, MongoDB, ReactJS, NodeJS, and SQL. Beginning my journey with game development, I slowly transitioned more into web and mobile app development. As a side hobby, I also like to play the drum set!
                 </span>
               </CardContent>
             </Card>
